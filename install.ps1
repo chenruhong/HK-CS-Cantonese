@@ -22,4 +22,10 @@ if ($LASTEXITCODE -ne 0 -or -not (Test-Path -LiteralPath (Join-Path $Destination
 }
 
 Write-Output "Installed hk-customer-service-cantonese to $Destination"
+Write-Output ""
+$notice = Join-Path $Destination "NOTICE.md"
+if (Test-Path -LiteralPath $notice) {
+    Get-Content -LiteralPath $notice -Encoding UTF8 | Write-Output
+    Write-Output ""
+}
 Write-Output "Restart Codex or begin a new task before using the skill."
