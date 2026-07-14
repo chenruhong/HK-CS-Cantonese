@@ -1,0 +1,4 @@
+interface:
+  display_name: "HK Customer-Service Cantonese"
+  short_description: "Natural Cantonese for Hong Kong customer service"
+  default_prompt: "Use $hk-customer-service-cantonese to rewrite this message in concise, natural Hong Kong customer-service Cantonese."
